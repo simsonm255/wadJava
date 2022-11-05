@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<script>
+    function validateform() {
+        var name = document.myform.name.value;
+
+        // var password = document.myform.password.value;
+        var suject = document.myform.subject.value;
+        var req = document.myform.request.value;
+        if (suject == null || suject == "") {
+            alert("must fill subject")
+        }
+        if (req == null || req == "") {
+            alert("must fill special request")
+        }
+
+
+        if (name == null || name == "" || name.length() > 10) {
+            alert("Name can't be blank");
+            return false;
+        } else if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+    }
+
+    function checkName() {
+        // var name = docuemnt.myform.name.value;
+
+
+
+        var name = document.myform.name.value;
+
+        const isUpperCase = (string) => /^[A-Z]*$/.test(string)
+       const isLowerCase = (string) => /^[a-z]*$/.test(string)
+
+       if(isUpperCase(name)){
+        alert("is in uppercase");
+       }
+
+        var format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+        if (name == null || name == "") {
+            alert("name can't be blank");
+        }
+        if (Number.isNaN(name)) {
+        }
+        // else {
+        //     alert("it's number")
+        // }
+        if (name.match(format)) {
+            alert("name should not be special char")
+            return false;
+        } else {
+            return false;
+        }
+
+    }
+
+    function checkPassword() {
+        var password = document.myform.password.value;
+        if (password == null || password == "") {
+            alert("password should not be null");
+            return false;
+        } else if (password.length < 5) {
+            alert("password should not be less than 5 character");
+            return true;
+        }
+        if (password.length >= 8) {
+            alert("password length  should not more than 8 characters");
+            return false;
+        }
+    }
+    function checkYear() {
+        var year = document.myform.year.value;
+        if (year != 2) {
+            alert("must select 2nd year")
+
+        }
+    }
+
+</script>
+
+<body>
+    <form action="" method="post" name="myform" onsubmit="validateform()">
+        <p>Name</p>
+        <p>
+            <input type="text" name="name" onblur="return checkName()" />
+        </p>
+        <p>password</p>
+        <p>
+            <input type="text" name="password" onblur="return checkPassword()" />
+        </p>
+
+        <p>Which year</p>
+        <p onblur="return checkYear()">
+            <input type="radio" name="year" value="1" onblur="return checkYear()" />1st year
+            <input type="radio" name="year" value="2" onblur="return checkYear()" />2nd year
+            <input type="radio" name="year" value="3" onblur="return checkYear()" />3rd year
+
+        </p>
+        <p>Subject registered:</p>
+        <p>
+            <select name="subject" id="1">
+                <option value="1">E101</option>
+                <option value="2">E102</option>
+                <option value="3">E103</option>
+            </select>
+        </p>
+        <p>Date:</p>
+        <p>
+            <input type="date" />
+        </p>
+        <p>
+            <input type="text" name="request" placeholder="Enter Your special request here" />
+        </p>
+
+
+        <p>
+            <script>
+                
+            </script>
+        </p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+        <a href="www.google.com" class="btn btn-primary">submit</a>
+    </form>
+
+
+
+
+
+</body>
+
+</html>

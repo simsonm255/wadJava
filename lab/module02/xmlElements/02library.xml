@@ -1,0 +1,17 @@
+<?xml version = "1.0"?>
+<Libraries>
+    <library>
+        <lib_name>The National Library </lib_name>
+        <Lib_total_no_of_books>26,41,615 books</Lib_total_no_of_books>
+        <Lib_total_no_of_reference>200000</Lib_total_no_of_reference>
+        <lib_no_of_journal>4000000</lib_no_of_journal>
+        <lib_no_of_periodicals>340</lib_no_of_periodicals>
+    </library>
+    <library>
+        <lib_name>The state Library </lib_name>
+        <Lib_total_no_of_books>26,41,615 books</Lib_total_no_of_books>
+        <Lib_total_no_of_reference>200000</Lib_total_no_of_reference>
+        <lib_no_of_journal>4000000</lib_no_of_journal>
+        <lib_no_of_periodicals>340</lib_no_of_periodicals>
+    </library>
+</Libraries>

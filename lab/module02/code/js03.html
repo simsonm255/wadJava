@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Request for White Paper</title>
+</head>
+<script>
+    function checkFName() {
+        // var name = docuemnt.myform.name.value;
+        var name = document.myform.fname.value;
+        var format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+        if (name == null || name == "") {
+            alert("name can't be blank");
+            return false;
+        }
+        if (Number.isNaN(name)) {
+        }
+        // else {
+        //     alert("it's number")
+        // }
+        if (name.match(format)) {
+            alert("name should not be special char")
+            return false;
+        } else {
+            return false;
+        }
+    }
+    function checkLName() {
+        // var name = docuemnt.myform.name.value;
+        var name = document.myform.lname.value;
+        var format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+        if (name == null || name == "") {
+            alert("name can't be blank");
+            return false;
+        }
+        if (Number.isNaN(name)) {
+        }
+        // else {
+        //     alert("it's number")
+        // }
+        if (name.match(format)) {
+            alert("name should not be special char")
+            return false;
+        } else {
+            return false;
+        }
+    }
+
+</script>
+<body>
+    <h2>Request for White Paper </h2> <br>
+    <p> Please fill out the form below.If you have any questions,please e-mail<br>
+        <a href="mailto:white paper@ektron.com">white paper@ektron.com</a><br>
+        * - required fields
+    </p>
+
+    <hr color="blue"> <br>
+    <form name="myform" method="get">
+        *First Name:
+        <input type="text" name="fname"  onblur="checkFName()"> <br><br>
+        *Last Name:
+        <input type="text" name="lname"  onblur="checkLName()"><br> <br>
+        Company Name:
+        <input type="text" name="name" id="id"><br><br>
+        Company/Personal Website:
+        <input type="text" name="name" id="id"><br><br>
+        *Email:
+        <input type="email" name="name" id="id"><br><br>
+        Phone:
+        <input type="text" name="text" id="id">
+        Ext:
+        <input type="text" name="name"><br><br>
+        State/Province:
+        <select>
+            <option id="Select for USA or Canada Only">Select for USA or Canada Only</option>
+        </select><br><br>
+        *Country:
+        <select>
+            <option id="United States">United States</option>
+        </select><br><br>
+        Comments:
+        <input type="number" name="name" id="id"><br><br>
+        <input type="submit" value="Request White Paper" style="align:'center'">
+    </form>
+</body>
+
+</html>

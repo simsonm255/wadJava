@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+          <!-- XML Schema Generated from XML Document on Sun Nov 06 2022 00:13:46 GMT+0530 (India Standard Time) -->
+          <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+       <xs:element name="Libraries">
+              <xs:complexType>
+                     <xs:sequence>
+                            <xs:element name="library" maxOccurs="unbounded">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="lib_name" type="xs:string"></xs:element>
+                                                 <xs:element name="Lib_total_no_of_books" type="xs:string"></xs:element>
+                                                 <xs:element name="Lib_total_no_of_reference" type="xs:int"></xs:element>
+                                                 <xs:element name="lib_no_of_journal" type="xs:int"></xs:element>
+                                                 <xs:element name="lib_no_of_periodicals" type="xs:int"></xs:element>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                        </xs:sequence>
+                 </xs:complexType>
+          </xs:element>
+   </xs:schema>

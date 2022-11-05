@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE note [
+<!ELEMENT Store(Retail-store)>
+<!ELEMENT Retail-store (Shop_name,shop_location,Total_items,home_delivery,Total_revenue)>
+<!ELEMENT Shop_name (#PCDATA)>
+<!ELEMENT Total_items (#PCDATA)>
+<!ELEMENT home_delivery (#PCDATA)>
+<!ELEMENT Total_revenue (#PCDATA)>
+]>

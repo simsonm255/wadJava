@@ -1,0 +1,31 @@
+<?xml version = "1.0"?>
+<Store>
+    <Retail-store>
+        <Shop_name>sri</Shop_name>
+        <shop_location>karur</shop_location>
+        <Total_items>10</Total_items>
+        <home_delivery>yes</home_delivery>
+        <Total_revenue>100</Total_revenue>
+    </Retail-store>
+    <Retail-store>
+        <Shop_name>kaviya store</Shop_name>
+        <shop_location>namakal</shop_location>
+        <Total_items>13</Total_items>
+        <home_delivery>no</home_delivery>
+        <Total_revenue>300</Total_revenue>
+    </Retail-store>
+    <Retail-store>
+        <Shop_name>vel</Shop_name>
+        <shop_location>madurai</shop_location>
+        <Total_items>70</Total_items>
+        <home_delivery>yes</home_delivery>
+        <Total_revenue>3000</Total_revenue>
+    </Retail-store>
+    <Retail-store>
+        <Shop_name>muruga</Shop_name>
+        <shop_location>palani</shop_location>
+        <Total_items>100</Total_items>
+        <home_delivery>no</home_delivery>
+        <Total_revenue>1000</Total_revenue>
+    </Retail-store>
+</Store>

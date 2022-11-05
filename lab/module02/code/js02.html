@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+</head>
+
+<script>
+    function validateform() {
+        var name = document.myform.name.value;
+        var sex = document.myform.sex.value;
+        var pp = document.myform.pp.value;
+        var describe = document.myform.describe.value;
+
+        if (sex == null || sex == "") {
+            alert("must fill all content")
+        }
+        if (pp == null || pp == "") {
+            alert("must fill all content")
+        }
+        if (describe == null || describe == "") {
+            alert("must fill all content")
+        }
+    }
+
+    function checkName() {
+        // var name = docuemnt.myform.name.value;
+        var name = document.myform.name.value;
+        var format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+        if (name == null || name == "") {
+            alert("name can't be blank");
+            return false;
+        }
+        if (Number.isNaN(name)) {
+        }
+        // else {
+        //     alert("it's number")
+        // }
+        if (name.match(format)) {
+            alert("name should not be special char")
+            return false;
+        } else {
+            return false;
+        }
+    }
+
+
+    function checkEye() {
+        var eye = document.myform.eye.value;
+        if (eye != 2) {
+            alert("must select black color")
+
+        }
+    }
+
+</script>
+
+<body>
+    <form action="" method="post" name="myform" onsubmit="return validateform()">
+        <table border="">
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        <input type="text" name="name" onblur="return checkName()" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sex
+                    </td>
+                    <td>
+                        <input type="radio" name="sex" value="m" />Male
+                        <input type="radio" name="sex" value="f" />Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Eye color
+                    </td>
+                    <td>
+                        <select name="eye" id="" onblur="checkEye()">
+                            <option value="1">Red</option>
+                            <option value="2">Black</option>
+                            <option value="3">green</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Check all that apply
+                    </td>
+                    <td>
+                        <input type="checkbox" name="pp" />Over 6 feet tail
+                        <input type="checkbox" name="pp" />Over 200 pounds
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Check all that apply
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="describe" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" value="submit" style="align-content: center;">Enter my information
+                        </button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
